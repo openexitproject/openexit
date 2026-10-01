@@ -1,0 +1,210 @@
+{
+    "protocolVersion":  "1.0",
+    "cases":  [
+                  {
+                      "id":  "valid-minimal",
+                      "path":  "valid/minimal",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-empty-resource",
+                      "path":  "valid/empty-resource",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-multiple-resources",
+                      "path":  "valid/multiple-resources",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-multiple-chunks",
+                      "path":  "valid/multiple-chunks",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-assets",
+                      "path":  "valid/assets",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-relationships",
+                      "path":  "valid/relationships",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-unicode",
+                      "path":  "valid/unicode",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-composite-identity",
+                      "path":  "valid/composite-identity",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-bounded-consistency",
+                      "path":  "valid/bounded-consistency",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "valid-best-effort-consistency",
+                      "path":  "valid/best-effort-consistency",
+                      "expected":  {
+                                       "valid":  true
+                                   }
+                  },
+                  {
+                      "id":  "invalid-missing-manifest",
+                      "path":  "invalid/missing-manifest",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_MALFORMED_PACKAGE"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-unsupported-version",
+                      "path":  "invalid/unsupported-version",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_UNSUPPORTED_VERSION"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-invalid-manifest",
+                      "path":  "invalid/invalid-manifest",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_MANIFEST"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-missing-schema",
+                      "path":  "invalid/missing-schema",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_MISSING_SCHEMA"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-invalid-resource",
+                      "path":  "invalid/invalid-resource",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-duplicate-resource",
+                      "path":  "invalid/duplicate-resource",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_DUPLICATE_RESOURCE"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-bad-checksum",
+                      "path":  "invalid/bad-checksum",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_CHECKSUM_MISMATCH"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-missing-asset",
+                      "path":  "invalid/missing-asset",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_MISSING_ASSET"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-invalid-relationship",
+                      "path":  "invalid/invalid-relationship",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RELATIONSHIP"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-path-traversal",
+                      "path":  "invalid/path-traversal",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_PATH_TRAVERSAL"
+                                   }
+                  },
+                  {
+                      "id":  "invalid-invalid-record",
+                      "path":  "invalid/invalid-record",
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RECORD"
+                                   }
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  true
+                                   },
+                      "path":  "valid/chunk-sequence-basic",
+                      "id":  "valid-chunk-sequence-basic"
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   },
+                      "path":  "invalid/chunk-sequence-zero",
+                      "id":  "invalid-chunk-sequence-zero"
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   },
+                      "path":  "invalid/chunk-sequence-negative",
+                      "id":  "invalid-chunk-sequence-negative"
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   },
+                      "path":  "invalid/chunk-sequence-gap",
+                      "id":  "invalid-chunk-sequence-gap"
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   },
+                      "path":  "invalid/chunk-sequence-duplicate",
+                      "id":  "invalid-chunk-sequence-duplicate"
+                  },
+                  {
+                      "expected":  {
+                                       "valid":  false,
+                                       "errorCode":  "PASP_INVALID_RESOURCE"
+                                   },
+                      "path":  "invalid/chunk-sequence-filename-mismatch",
+                      "id":  "invalid-chunk-sequence-filename-mismatch"
+                  }
+              ]
+}

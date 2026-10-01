@@ -1,0 +1,2 @@
+include README.md LICENSE IMPLEMENTATION_NOTES.md
+recursive-include src/openexit/schemas *.json

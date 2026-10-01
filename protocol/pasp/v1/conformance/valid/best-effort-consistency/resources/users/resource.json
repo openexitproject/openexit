@@ -1,0 +1,20 @@
+{
+  "name": "users",
+  "schema": {
+    "type": "object"
+  },
+  "identity": [
+    "id"
+  ],
+  "recordCount": 2,
+  "chunks": [
+    {
+      "sequence": 1,
+      "path": "resources/users/00000001.ndjson",
+      "recordCount": 2,
+      "uncompressedBytes": 52,
+      "sha256": "00820cf4611b54f745a27efd60535ef7936130e5229fcc26aa2598505685da9a"
+    }
+  ],
+  "ordered": true
+}

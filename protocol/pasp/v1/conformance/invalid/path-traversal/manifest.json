@@ -1,0 +1,31 @@
+{
+  "format": "openexit.bundle",
+  "paspVersion": "1.0",
+  "packageId": "pkg-fixture",
+  "exportId": "export-fixture",
+  "createdAt": "2026-01-01T00:00:00Z",
+  "producer": {
+    "name": "openexit-fixture",
+    "version": "1.0.0"
+  },
+  "scope": {
+    "type": "organization",
+    "id": "org_fixture"
+  },
+  "consistency": {
+    "level": "snapshot"
+  },
+  "resources": [
+    {
+      "name": "users",
+      "descriptor": "../outside/resource.json"
+    }
+  ],
+  "assets": {
+    "count": 0,
+    "totalBytes": 0
+  },
+  "integrity": {
+    "algorithm": "sha256"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "openexit",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "OpenExit Protocol toolkit for portable application state",
+  "exports": "./src/index.js",
+  "bin": {
+    "openexit": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "node --check src/cli.js && node --check src/transfer.js && node --check src/schema.js && node --check src/pasp.js",
+    "typecheck": "node --check src/index.js && node --check src/pasp.js",
+    "check": "npm run lint",
+    "build": "npm run lint"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "files": [
+    "src/",
+    "examples/",
+    "protocol/",
+    "docs/",
+    "README.md",
+    "PROTOCOL.md",
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "messages",
+  "schema": {
+    "type": "object"
+  },
+  "identity": [
+    "id"
+  ],
+  "recordCount": 1,
+  "chunks": [
+    {
+      "sequence": 1,
+      "path": "resources/messages/00000001.ndjson",
+      "recordCount": 1,
+      "uncompressedBytes": 69,
+      "sha256": "2ad78143581f33f859c8e164431375f945a9cba5f9f77f1de5b51d30e3d17e9d"
+    }
+  ],
+  "ordered": true
+}

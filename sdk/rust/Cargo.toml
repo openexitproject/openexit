@@ -1,0 +1,14 @@
+[package]
+name = "openexit"
+version = "0.1.0"
+edition = "2024"
+description = "OpenExit Protocol toolkit for portable application state"
+license = "MIT"
+readme = "README.md"
+include = ["Cargo.toml", "src/**", "schemas/**", "README.md", "LICENSE"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+jsonschema = { version = "0.57", default-features = false }
+sha2 = "0.10"

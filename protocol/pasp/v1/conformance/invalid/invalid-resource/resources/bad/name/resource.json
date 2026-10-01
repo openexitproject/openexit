@@ -1,0 +1,11 @@
+{
+  "name": "bad/name",
+  "schema": {
+    "type": "object"
+  },
+  "identity": [
+    "id"
+  ],
+  "recordCount": 0,
+  "chunks": []
+}
