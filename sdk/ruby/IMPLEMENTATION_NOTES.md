@@ -1,0 +1,3 @@
+# Ruby PASP implementation notes
+
+PASP 1.0 concepts include manifests, scopes, producers, consistency, resources, chunks, assets, relationships, integrity, and inspection summaries. Canonical schemas are packaged locally byte-for-byte. Verification uses streamed NDJSON and incremental SHA-256; protocol paths are POSIX relative and symlink escapes are rejected. Chunk sequences start at 1 and are contiguous, unique, and filename-matched. Explicit relationships are validated without inferred referential scans. Gem 0.1.0 implements PASP 1.0 and unsupported versions raise PASP_UNSUPPORTED_VERSION. Node, Python, and the 27 shared fixtures agree on these semantics.

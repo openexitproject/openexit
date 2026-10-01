@@ -1,0 +1,20 @@
+{
+  "name": "projects",
+  "schema": {
+    "type": "object"
+  },
+  "identity": [
+    "id"
+  ],
+  "recordCount": 1,
+  "chunks": [
+    {
+      "sequence": 1,
+      "path": "resources/projects/00000001.ndjson",
+      "recordCount": 1,
+      "uncompressedBytes": 26,
+      "sha256": "a5b6ad9e8b54326c85258c11e74da0f9f75fd7ba8565534b31660b8e1803a604"
+    }
+  ],
+  "ordered": true
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "bad",
+    "from": {
+      "resource": "missing",
+      "pointer": "/id"
+    },
+    "to": {
+      "resource": "missing2",
+      "pointer": "/id"
+    },
+    "cardinality": "one-to-one"
+  }
+]

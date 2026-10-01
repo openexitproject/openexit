@@ -1,0 +1,21 @@
+{
+  "name": "memberships",
+  "schema": {
+    "type": "object"
+  },
+  "identity": [
+    "org",
+    "user"
+  ],
+  "recordCount": 1,
+  "chunks": [
+    {
+      "sequence": 1,
+      "path": "resources/memberships/00000001.ndjson",
+      "recordCount": 1,
+      "uncompressedBytes": 40,
+      "sha256": "d2b5dd1e73f50f25c93bed4d7be094e5996ec15f994d3ae0fb0e3620de435160"
+    }
+  ],
+  "ordered": true
+}

@@ -1,0 +1,48 @@
+# Node
+node_modules/
+coverage/
+
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/dist/
+**/build/
+**/*.egg-info/
+
+# Ruby
+**/.bundle/
+
+# Rust and .NET
+**/target/
+**/bin/
+**/obj/
+**/artifacts/
+ruby-gem-install/cache/
+
+# Go and local test output
+**/.gocache/
+
+# IDE and local environment
+.idea/
+.vs/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Credentials and private key material
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated release packages
+*.gem
+*.nupkg
+*.whl
+*.crate
+*.tar.gz

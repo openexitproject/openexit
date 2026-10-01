@@ -1,0 +1,14 @@
+[
+  {
+    "id": "user-project",
+    "from": {
+      "resource": "users",
+      "pointer": "/id"
+    },
+    "to": {
+      "resource": "projects",
+      "pointer": "/id"
+    },
+    "cardinality": "many-to-many"
+  }
+]

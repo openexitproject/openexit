@@ -1,0 +1,12 @@
+.venv/
+.pytest_tmp/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.wheel-smoke*/
+.compat-*/
+.python-runtimes/
+.uv-cache/

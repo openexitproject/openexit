@@ -1,0 +1,9 @@
+{
+  "name": "users",
+  "schema": "schemas/missing.schema.json",
+  "identity": [
+    "id"
+  ],
+  "recordCount": 0,
+  "chunks": []
+}

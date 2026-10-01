@@ -1,0 +1,9 @@
+# PASP .NET implementation notes
+
+The implementation follows the frozen PASP 1.0 directory-bundle contract. Manifests contain the required format, protocol version, package/export identity, RFC 3339 creation time, producer, scope, consistency, resource descriptors, asset summary, and SHA-256 integrity metadata. Resource descriptors contain a customer schema, identity pointers, record count, and one-based contiguous chunk descriptors. Chunk paths are protocol-relative forward-slash paths and chunk data is streamed as UTF-8 NDJSON. Assets and asset indexes are intended to be streamed and hashed incrementally.
+
+`snapshot`, `bounded`, and `best_effort` are the supported consistency levels. Unsupported protocol versions map to `PASP_UNSUPPORTED_VERSION`; malformed or schema-invalid manifests map to `PASP_INVALID_MANIFEST`. Bundle path failures map to `PASP_PATH_TRAVERSAL`, missing or malformed package data to `PASP_MALFORMED_PACKAGE` or `PASP_INVALID_RESOURCE`, and integrity mismatches to `PASP_CHECKSUM_MISMATCH`.
+
+Canonical schemas are embedded from `protocol/pasp/v1/schemas` at build time and loaded only through the allow-listed schema names. The selected stable JSON Schema dependency is JsonSchema.Net 9.4.0, which supports Draft 2020-12. No network resolver is configured by this SDK; the current implementation performs deterministic envelope validation and local bundle checks with BCL JSON and streaming I/O.
+
+Unknown fields are retained by the generic JSON representation where the protocol permits them; the canonical schemas remain authoritative for closed objects. Verification is metadata-first and processes chunk files with bounded hashing. Relationships are explicit declarations and are not inferred. No protocol discrepancy was found during the available audit. The .NET SDK is read/inspect/verify only and does not implement writing, archives, cloud storage, or adapters.

@@ -1,0 +1,27 @@
+{
+    "name":  "users",
+    "schema":  {
+                   "type":  "object"
+               },
+    "identity":  [
+                     "id"
+                 ],
+    "recordCount":  4,
+    "chunks":  [
+                   {
+                       "sequence":  1,
+                       "path":  "resources/users/00000001.ndjson",
+                       "recordCount":  2,
+                       "uncompressedBytes":  56,
+                       "sha256":  "5ed17490c8df3a1e2f86a719ada112c1e7cfade993cdc62975194b2d7288aaf9"
+                   },
+                   {
+                       "sequence":  3,
+                       "path":  "resources/users/00000003.ndjson",
+                       "recordCount":  2,
+                       "uncompressedBytes":  61,
+                       "sha256":  "2fd171e9ae8c1a04159358a3b0b31220a98cf236f4722bb4bb1cad60dbbd48e0"
+                   }
+               ],
+    "ordered":  true
+}
