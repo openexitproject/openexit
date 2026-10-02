@@ -2,6 +2,8 @@
 
 OpenExit is a developer toolkit for moving application state between software systems. A vendor's source adapter maps proprietary data into canonical records. OpenExit writes a portable bundle; a destination adapter maps those records into another application's state.
 
+The repository root package is the OpenExit Node SDK. Other language SDKs are maintained under `sdk/`.
+
 This package implements **PASP (Portable Application State Protocol) 1.0**. The stable protocol name is PASP; it is independent of the stable `openexit.bundle` wire-format identifier.
 
 ## Protocol source of truth

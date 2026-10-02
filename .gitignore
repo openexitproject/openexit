@@ -46,3 +46,7 @@ ruby-gem-install/cache/
 *.whl
 *.crate
 *.tar.gz
+**/target/
+**/.classpath
+**/.project
+**/.settings/
